@@ -92,7 +92,7 @@ const attrs = useAttrs();
   const checkItems = () => {
     const keys = []
     for(const k of props.items){
-      if(!k.key || !key.component){
+      if(!k.key || !k.component){
         console.warn('zForm Warning: items中缺少key 或 component 字段')
         break
       }
