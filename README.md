@@ -1,19 +1,11 @@
-# zform
+<h1 align="center">zForm</h1>
+<a align="center" href='javascript:;' target='_blank'><img src='https://i.postimg.cc/c47Cwk7W/form-builders-11.png'/></a>
 
-## Project setup
-```
-npm install
-```
+z是26字母中最后一个，也包含在我名字里.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+我希望这个表单组件是你用的最后一个，因此取名为zForm
 
-### Compiles and minifies for production
+## install
 ```
-npm run build
+npm install @webszy/zform --save
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

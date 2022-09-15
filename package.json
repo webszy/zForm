@@ -1,13 +1,15 @@
 {
-  "name": "zform",
-  "version": "0.1.0",
+  "name": "@webszy/zform",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build --target lib --inline-vue  --formats umd,umd-min ./src/main.js"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.0.9",
     "core-js": "^3.8.3",
+    "element-plus": "^2.2.16",
     "vue": "^3.2.13"
   },
   "devDependencies": {
