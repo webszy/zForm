@@ -70,7 +70,7 @@ const props = defineProps({
 const formData = reactive({})
 const rules = shallowRef([])
 const formRef = ref(null)
-const attrs = useAttrs()
+const attrs = useAttrs();
 
 (function(){
   const generateRules = () => {
