@@ -9,3 +9,9 @@ z是26字母中最后一个，也包含在我名字里.
 ```
 npm install @webszy/zform --save
 ```
+## how to use
+## 
+```ts
+
+
+```

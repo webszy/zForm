@@ -23,6 +23,7 @@ const items = shallowRef([
     key: 'title',
     title: '小说名',
     component: 'el-input',
+    desc: '小说的名字',
     props: { placeholder: '请输入姓名' },
     rule: [{ required: true, trigger: 'blur', message: '必填项' }],
   },

@@ -1,10 +1,14 @@
 {
   "name": "@webszy/zform",
   "version": "0.0.1",
-  "private": true,
+  "main": "./dist/zform.umd.min.js",
+  "exports": {
+    ".": "./dist/zform.umd.min.js"
+  },
   "scripts": {
     "dev": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --inline-vue  --formats umd,umd-min ./src/main.js"
+    "build": "vue-cli-service build --target lib --inline-vue  --formats umd,umd-min ./src/main.js",
+    "pub": "npm public --access=public"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.0.9",
@@ -16,6 +20,18 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-service": "~5.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webszy/zForm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/webszy/zForm/issues"
+  },
+  "private": false,
+  "homepage": "https://github.com/webszy/zForm#README",
+  "keywords": ["vue3","form","element-plus"],
+  "author": "webszy",
+  "license": "MIT",
   "browserslist": [
     "> 1%",
     "last 2 versions",
