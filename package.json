@@ -1,6 +1,7 @@
 {
   "name": "@webszy/zform",
   "version": "0.0.1",
+  "description": "May Your Last Form Component based on Vue3+elementPlus",
   "main": "./dist/zform.umd.min.js",
   "exports": {
     ".": "./dist/zform.umd.min.js"
