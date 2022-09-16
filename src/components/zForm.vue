@@ -1,7 +1,7 @@
 <template>
   <el-form
       v-bind="$attrs"
-      ref="form"
+      ref="formRef"
       :model="formData"
       :rules="rules"
       :validate-on-rule-change="false"
@@ -120,9 +120,9 @@ const validate = () => new Promise(resolve => {
 })
 const resetForm = () => unref(formRef)?.resetFields()
 const getFormData = async () => {
-  if(unref(rules).length){
+  if(JSON.stringify(rules.value) !== '{}'){
     const isValid = await validate()
-    return isValid ? toRaw(formData) : {isValid}
+    return isValid ? toRaw(formData) : { isValid }
   }
   return toRaw(formData)
 }
@@ -135,11 +135,11 @@ const beforeUpload = (rawFile, { key, uploader }) => {
           if (uploader.afterUpload && val.success) {
             return uploader.afterUpload(val, formData)
           } else if (uploader.responseKey && val.success) {
-            formData.value[key] = val[uploader.responseKey]
+            formData[key] = val[uploader.responseKey]
           }
         })
   } else {
-    console.warn('not find the v-on: ', fun, ' on the LawForm,You should fix it')
+    console.warn('not find the v-on: ', fun, ' on the zForm,You should fix it')
   }
 
   return Promise.reject()
